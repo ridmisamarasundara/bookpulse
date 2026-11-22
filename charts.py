@@ -64,6 +64,6 @@ fig = px.scatter(
     title="Price vs rating (hover for the book title)",
     labels={"rating": "Star rating", "price": "Price (£)"},
 )
-fig.write_html("charts/price_vs_rating.html")
+fig.write_html("charts/price_vs_rating.html", include_plotlyjs="cdn")
 
 print("Charts saved in the charts/ folder")
